@@ -3,7 +3,7 @@
 DOMAIN_HOST=1
 GITHUB_HOST=1
 # DOMAIN_LIST自定义域名列表，多域名以空格隔开，这里的域名会通过国外的DNS API返回正确的IP写入hosts文件以解决DNS污染问题。
-DOMAIN_LIST=(api.themoviedb.org image.tmdb.org)
+DOMAIN_LIST=(api.themoviedb.org api.tmdb.org themoviedb.org www.themoviedb.org tmdb.org image.tmdb.org)
 GITHUB_HOST_URL="https://hosts.gitcdn.top/hosts.txt"
 DNS_API="https://networkcalc.com/api/dns/lookup"
 REMOTE_GITHUB_HOST_AT=`curl -s $GITHUB_HOST_URL | grep -w "# last fetch time:"`
